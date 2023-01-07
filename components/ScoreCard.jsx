@@ -33,10 +33,8 @@ const ReloadBtn = styled.button`
 
 const ScoreCard = ({ data, category, score, scoreCard }) => {
 
-    const result = data.filter(el => el.category === category).length //questions filtered by selected category
-
+    const result = data.filter(el => el.category === category).length
     const reload = () => {
-        //reload page to start again:
         window.location.reload();
     }
 
