@@ -61,11 +61,9 @@ function QuestionCard({ data, category, score, setScore, setScoreCard }) {
   const [click, setClick] = useState(false)
   const [selected, setSelected] = useState(null)
 
-  //Get questions by selected category:
   const questions = data.filter(el => el.category === category)
 
   const handleSelected = (answer) => {
-    //check is the answer is correct:
     if (selected === answer && selected.isCorrect) {
         return 'green'
     } else if (selected === answer && !selected.isCorrect) {
