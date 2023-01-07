@@ -13,13 +13,12 @@ function App() {
   const [category, setCategory] = useState(null)
 
   useEffect(() => {
-    //GET questions from MongoDB:
     const fetchQuestions = async () => {
       const res = await fetch('/questions/')
       const json = await res.json()
 
       if (res.ok) {
-        setData(json) //questions
+        setData(json) 
       }
     }
 
