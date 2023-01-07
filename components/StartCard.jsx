@@ -28,7 +28,6 @@ const Btn = styled.button`
 `
 
 const StartCard = ({ setCategory }) => {
-    //Set selected category:
     const setFrontEnd = () => {
         setCategory('front-end')
     }
