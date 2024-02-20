@@ -1,4 +1,6 @@
-# Front-End dev Trivia app
+# Trivia app
+
+### This is only frontend, created in React.
 
 ## You can try it [here](https://graceful-gnome-75fa02.netlify.app)
 
